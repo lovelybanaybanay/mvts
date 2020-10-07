@@ -1,0 +1,203 @@
+* {
+    text-decoration: none!important;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+ h1 {
+    font-size: 25px;
+    margin: 0;
+    color: white;
+}
+p#motto {
+    color: white;
+    margin: 0;
+    font-style: italic;
+}
+.logocontainer {
+    display: block;
+    line-height: .8;
+}
+.navbar {
+    background: #941010;
+    padding: 0;
+}
+.navbar-nav {
+    margin: 5px;
+    font-size: 15px;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    border-radius: 30px;
+    background-color: #fab700;
+    color: #941010;
+}
+/*seachbar*/
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 2px;
+    }
+
+    .search_input{
+    color: #242424;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 27px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #fab700;
+    }
+
+    .search_icon{
+    height: 25px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #941919;
+    text-decoration:none;
+    }
+/*end searchbar*/
+/*font awesome*/
+    .fa-bars {
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 3px 7px;
+        border-radius: 10%;
+        border: 1px solid white;
+        margin-right: 10px;
+    }
+    .fa-bars:hover {
+        background: white;
+        color: #691515;
+    }
+    .userprofile {
+        margin-right:30px;
+        height: 25px;
+        width: 30px;
+        border-radius: 50%;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: 10px;
+        height: 30px;
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        padding: 2px;
+    }
+    #userlink{
+        color: #691515;
+    }
+    #userlink:hover {
+        color: #fab700;
+    }
+/*end font awesome*/
+
+/*media queries*/
+@media (max-width: 325px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+    font-size: 14px;
+  }
+  p#motto{
+    font-size: 7px;
+  }
+  .logocontainer {
+    margin: 10px 5px;
+  }
+  .navbar-brand {
+    display: none;
+}
+}
+@media (min-width: 326px) and (max-width: 575.98px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+    font-size: 14px;
+  }
+  p#motto{
+    font-size: 7px;
+  }
+  .navbar-brand {
+        margin: 0 2px;
+        } 
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 16px;
+  }
+  .navbar-brand {
+        margin: 0 2px;
+        } 
+    p#motto{
+    font-size: 9px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px)  {
+  .navbar-brand {
+        margin-left: 10px;
+        } 
+    h1 {
+        font-size: 18px;
+    }
+    p#motto{
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-brand {
+        margin-left: 10px;
+        } 
+    h1 {
+        font-size: 21px;
+    }
+    p#motto{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+        margin-left: 30px;
+        } 
+    p#motto{
+    font-size: 12px;
+  }
+  .logocontainer {
+    margin: 10px 0;
+  }
+}
+/*end media queries*/
