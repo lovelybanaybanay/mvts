@@ -161,7 +161,7 @@ div.announce a:hover, div.announce a:active{
         float: right;
         background-image: linear-gradient(to left, rgba(74,13,22,1) 0%, rgba(121,9,9,0) 100%);
     }
-    .midnavind.midnav-prev{
+    .midnavind.midnav-prev{ 
           float: left;
           background-image: linear-gradient(to right, rgba(74,13,22,1) 0%, rgba(121,9,9,0) 100%);
     }
