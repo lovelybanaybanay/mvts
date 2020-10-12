@@ -15,6 +15,11 @@ hr {
     background color: white;
     margin: 0;
 }
+a.active {
+        color: #f0be0a!important;
+        background: #520b1c;
+        box-shadow: 0 5px #3b0613;
+}
 
 /*Nav*/
     h1 {
@@ -85,6 +90,29 @@ hr {
     }
 /*end menu button*/
 /*end nav*/
+.announce {
+    width: 100%;
+    background: #f0be0a;
+    color: #520b1c;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center; 
+    padding: 2px;
+}
+div.announce a {
+    border: 1px solid #520b1c;
+    border-radius: 5px;
+    background: transparent;
+    color: #520b1c;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: 0.3s;
+}
+div.announce a:hover, div.announce a:active{
+    border: 1px solid #520b1c;
+    background: #520b1c;
+    color: #f0be0a;
+}
 
 /*midnav*/
     .midnav {
@@ -109,7 +137,6 @@ hr {
         display: inline-block;
     }
     .midnav-link:hover {
-        background-color: white;
         color: #962134;
         transition: 0.3s;
         color: #f0be0a;
@@ -120,7 +147,24 @@ hr {
             box-shadow: 0 3px #520b1c;
           transform: translateY(4px);
         }
-
+    .scrollnav {
+        position: absolute;
+    }
+    .midnavind {
+        color: white;
+        height: 100%;
+        padding: 15px 10px; 
+        position: relative;
+        z-index: 2;
+    }
+    .midnavind.midnav-next{
+        float: right;
+        background-image: linear-gradient(to left, rgba(74,13,22,1) 0%, rgba(121,9,9,0) 100%);
+    }
+    .midnavind.midnav-prev{
+          float: left;
+          background-image: linear-gradient(to right, rgba(74,13,22,1) 0%, rgba(121,9,9,0) 100%);
+    }
 /*end midnav*/
 /*seachbar*/
     .searchbar{
@@ -291,6 +335,15 @@ hr {
         margin: 3px auto;
         font-size: 14px;
     }
+    .scrollnav {
+        overflow: scroll;
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .scrollnav::-webkit-scrollbar { 
+    display: none; 
+    }
 }
 @media (min-width: 326px) and (max-width: 575.98px) { /*small devices*/
     body {
@@ -357,8 +410,8 @@ hr {
     .scrollnav {
         overflow: scroll;
         width: 100%;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     .scrollnav::-webkit-scrollbar { 
     display: none; 
@@ -424,6 +477,13 @@ hr {
         margin: 3px 30px;
         font-size: 16px;
     }
+    i.midnavind {
+        display: none;
+    }
+    div.midnav {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px)  {
@@ -482,6 +542,13 @@ hr {
         margin: 3px 30px;
         font-size: 17px;
     }
+    i.midnavind {
+        display: none;
+    }
+    div.midnav {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -513,6 +580,13 @@ hr {
     .menudivider {
         display: none;
     }
+    i.midnavind {
+        display: none;
+    }
+    div.midnav {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -538,13 +612,12 @@ hr {
     .menudivider {
         display: none;
     }
+    div.midnav {
+        display: flex;
+        justify-content: center;
+    }
+    i.midnavind {
+        display: none;
+    }
 }
 /*end media queries*/
-/*wings*/
-    .leftwing{
-        background-color: white;
-    }
-    .rightwing {
-        background-color: white;
-    }
-/*end wings*/
